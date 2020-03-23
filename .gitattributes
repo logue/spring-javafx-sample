@@ -1,0 +1,28 @@
+* text=auto eol=lf encoding=UTF-8
+
+# Images
+*.bmp binary
+*.gif binary
+*.ico binary
+*.jpg binary
+*.png binary
+*.svg eol=lf encoding=UTF-8
+*.swf binary
+
+# Other
+*.bcmap binary
+*.xap binary
+*.properties eol=lf
+*.bat text eol=crlf
+
+# Binary Files
+# executable
+*.exe binary
+
+# archives
+*.tar binary
+*.gz  binary
+*.zip binary
+*.jar binary
+
+.gitkeep export-ignore

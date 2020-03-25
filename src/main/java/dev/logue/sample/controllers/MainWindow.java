@@ -13,20 +13,18 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class MainWindow {
 
-    private final FxControllerAndView<SomeDialog, VBox> someDialog;
+  private final FxControllerAndView<SomeDialog, VBox> someDialog;
 
-    @FXML
-    public Button openDialogButton;
+  @FXML public Button openDialogButton;
 
-    public MainWindow(FxControllerAndView<SomeDialog, VBox> someDialog) {
-        log.info("🔧 MainWindow Controller");
-        this.someDialog = someDialog;
-    }
+  public MainWindow(FxControllerAndView<SomeDialog, VBox> someDialog) {
+    log.info("🔧 MainWindow Controller");
+    this.someDialog = someDialog;
+  }
 
-    @FXML
-    public void initialize() {
-        log.info("🔧 Initialize MainWindow Controller");
-        openDialogButton.setOnAction(actionEvent -> someDialog.getController().show());
-    }
-
+  @FXML
+  public void initialize() {
+    log.info("🔧 Initialize MainWindow Controller");
+    openDialogButton.setOnAction(actionEvent -> someDialog.getController().show());
+  }
 }

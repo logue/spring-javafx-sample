@@ -20,25 +20,22 @@ import org.springframework.stereotype.Component;
 @Slf4j
 public class SomeDialog {
 
-    private Stage stage;
+  private Stage stage;
 
-    @FXML
-    private Button closeButton;
-    @FXML
-    private VBox dialog;
+  @FXML private Button closeButton;
+  @FXML private VBox dialog;
 
-    @FXML
-    public void initialize() {
-        log.info("🔧 Initialize SomeDialog Controller");
-        this.stage = new Stage();
-        stage.setScene(new Scene(dialog));
+  @FXML
+  public void initialize() {
+    log.info("🔧 Initialize SomeDialog Controller");
+    this.stage = new Stage();
+    stage.setScene(new Scene(dialog));
 
-        closeButton.setOnAction(actionEvent -> stage.close());
-    }
+    closeButton.setOnAction(actionEvent -> stage.close());
+  }
 
-    public void show() {
-        log.info("🔧 Show SomeDialog");
-        stage.show();
-    }
-
+  public void show() {
+    log.info("🔧 Show SomeDialog");
+    stage.show();
+  }
 }

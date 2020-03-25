@@ -9,14 +9,13 @@ import org.springframework.context.ApplicationEvent;
  */
 public class StageReadyEvent extends ApplicationEvent {
 
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-    public final Stage stage;
+  /** */
+  private static final long serialVersionUID = 1L;
 
-    public StageReadyEvent(Stage stage) {
-        super(stage);
-        this.stage = stage;
-    }
+  public final Stage stage;
+
+  public StageReadyEvent(Stage stage) {
+    super(stage);
+    this.stage = stage;
+  }
 }
